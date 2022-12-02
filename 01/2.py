@@ -6,14 +6,15 @@ with open('input.txt') as f:
    for l in f:
       a.append(l)
 
-m = 0
+s = []
 c = 0
 for n in a:
    if n == '\n':
-      m = max(m, c)
+      s.append(c)
       c = 0
       continue
    c += int(n)
 
-print(m)
+s.sort(reverse=True)
+print(sum(s[:3]))
 
