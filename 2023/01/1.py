@@ -2,7 +2,7 @@
 
 a = []
 
-with open('input.txt') as f:
+with open('input2.txt') as f:
    for l in f:
       a.append(l)
 
